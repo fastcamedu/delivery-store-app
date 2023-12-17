@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">주문 상세</h5>
+    <button type="button" class="close order-handle-modal-close-btn" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table class="table w-100">
+      <thead class="thead-light">
+      <td class="w-40">메뉴</td>
+      <td class="w-20">수량</td>
+      <td class="w-40">금액</td>
+      </thead>
+      <tbody th:each="orderItem: ${orderItems}">
+      <td th:text="orderItem.menuName">까페라떼</td>
+      <td th:text="orderItem.menuQuantity">2</td>
+      <td th:text="orderItem.menuPrice * orderItem.menuQuantity">8,000원</td>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary order-reject-btn" data-dismiss="modal">주문거절</button>
+    <button type="button" class="btn btn-primary order-confirm-btn">주문수락</button>
+  </div>
+</div>
+</html>

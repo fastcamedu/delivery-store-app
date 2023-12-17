@@ -1,0 +1,21 @@
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+server:
+  port: 20000
+  role-name: delivery-store-app
+
+external:
+  apis:
+    delivery-store-api:
+      host: http://localhost:20001
+      path:
+        login: /apis/auth
+        order-requests: /apis/stores/%d/orders
+        order-confirm:
+        order-detail: /apis/stores/%d/orders/%s
+        order-status: /apis/stores/%d/orders/%s

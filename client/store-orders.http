@@ -1,0 +1,3 @@
+### 상점에 들어온 주문 조회
+GET http://localhost:20002/orders
+Cookie: storeId=1; access-token=sample-token

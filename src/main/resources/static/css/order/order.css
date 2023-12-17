@@ -1,0 +1,47 @@
+.order-list {
+    text-align: center;
+}
+.order-table {
+    border-collapse: collapse;
+}
+.order-row {
+    height: 5rem;
+    border-bottom: 2px solid gray;
+}
+.order-shorten-id {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.order-status {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.order-status-icon {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.delivery-complete {
+    color: limegreen;
+}
+.order-period-area {
+    font-size: x-large;
+    font-weight: bold;
+}
+.order-handle-modal {
+    background-color: white;
+}
+.cooking-time-area {
+    text-align: center;
+}
+.cooking-time-btn {
+    width: 300px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.modal-header-title {
+    font-size: 2rem !important;
+}
+.modal-header-title-left-arrow {
+    width: 2rem;
+    height: 2rem;
+}

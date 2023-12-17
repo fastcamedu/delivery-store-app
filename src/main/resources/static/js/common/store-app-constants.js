@@ -1,0 +1,1 @@
+let COOKIE_NANE_ACCESS_TOKEN = "AccessToken";
